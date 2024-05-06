@@ -1,0 +1,169 @@
+*{
+    margin: 0%;
+    padding: 0% ;
+    box-sizing:border-box ;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    position: relative;
+    overflow: hidden;  /**/
+}
+#page{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color:#f1f1f1;
+}
+
+#page1{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color:#f1f1f1;
+    /* background-color:green; */
+}
+#page2{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color:#f1f1f1;
+}
+#page3{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color:#f1f1f1;
+}
+canvas{
+    max-height: 100vh;  /**/
+    max-width: 100vw;
+    position: relative; 
+    z-index: 9;        /**/
+}
+#loop{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    /* background-color: red; */
+    top: 30%;
+    font-size: 100px;
+    white-space:nowrap;     /**/
+    font-family: gilroy;
+}
+#loop>h1{
+    display: flex;
+    font-weight: 400;
+    animation-name: anim;     
+    animation-timing-function: linear;      /**/
+    animation-duration: 15s;  
+    animation-iteration-count: infinite;     /**/
+}
+#loop>h1>span{
+    -webkit-text-stroke: 1.2px #000;     /**/
+    color: transparent;
+    font-weight: 500;
+
+}
+@keyframes anim{
+    0%{                                     /**//**//**/
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+#nav{
+    height: 6%;
+    width: 100%;
+    /* background-color: chartreuse; */
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+#nav>h3{
+    font-family: gilroy;
+    font-weight: 400;
+    font-size: 22px;
+}
+#nav>button{
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #000;
+    color: white;
+    border: none;
+}
+#page>h3{
+    position: absolute;
+    top:70%;
+    font-family: gilroy;
+    font-weight: 400;
+    color: rgb(114, 106, 106);
+    left:7%
+}
+#page>h4{
+    position: absolute;
+    top:80%;
+    left: 19%;
+    font-family: gilroy;
+    font-weight: 500;
+}
+#page1>#right_text{
+    position: absolute;
+    top:20%;
+    left:7%;
+    
+}
+#page1>#right_text>h1{
+    line-height: 1.3;
+    font-size: 50px;
+}
+#page1>#left_text{
+    position: absolute;
+    top: 55%;
+    right: 3%;
+    text-align: end;
+}
+#page1>#left_text>h1{
+    font-size: 39px;
+    line-height: 1.3;
+}
+#page2>#letter1{
+    position: absolute;
+    top:18%;
+    left:7%;
+}
+#page2>#letter1>h1{
+    line-height: 1.3;
+    font-size: 40px;
+}
+#page2>#letter2{
+    position: absolute;
+    top: 62%;
+    right: 3%;
+    text-align: end;
+}
+#page2>#letter2>h1{
+    line-height: 1.3;
+    font-size: 40px;
+}
+#page3>#last_letter{
+    position: absolute;
+    top:30%;
+    left:4%;
+}
+#page3>#last_letter>h1{
+    line-height: 1.5;
+    font-size: 35px;
+}
+
+
+
+
+
