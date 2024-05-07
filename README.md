@@ -14,14 +14,17 @@ This project is a 3D animated UI website created using HTML, CSS, and JavaScript
 
 ***Locomotive Scroll***
 *   Initializes the Locomotive Scroll library for smooth scrolling on the #main element.
+
 ***Canvas Animation***
 *   Creates a canvas element and loads a sequence of images into an array.
 *   Updates the canvas with the current frame of the image sequence using the render function.
 *   Scales the image to fit the canvas using the scaleImage function.
+
 ***GSAP ScrollTrigger***
 *   Utilizes GSAP's ScrollTrigger to control animations based on scroll events.
 *   Updates the image sequence as you scroll through the designated trigger area.
 *   Pins the canvas during scrolling for a visually pleasing effect.
+
 ***GSAP Animation for Page Sections***
 *   Uses GSAP's *gsap.to* to create animations for different page sections.
 *   These animations are triggered by scrolling and include pinning the sections within their respective trigger areas.
